@@ -9,21 +9,21 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Raleway:wght@700;800;900&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="mezcla-color-1">
    <input type="checkbox" id="menu" >
-   <nav id="navbar" class="space-between">
+   <nav id="navbar" class="space-between mezcla-color-2 column">
      <div class="space-between">
         <div class="coqueta"><i class="fa-solid fa-dragon"></i> Leonardo Gonzlz</div>
-        <label id="menu-burger" for="menu">
+        <label id="menu-burger" for="menu" class="column">
           <div id="burger-raya-1" class="space-between">
-            <div></div>
+            <div class="mezcla-color-1"></div>
             <div></div>
           </div>
-          <div id="burger-raya-2">
+          <div id="burger-raya-2" class="mezcla-color-1">
           </div>
           <div id="burger-raya-3" class="space-between">
             <div></div>
-            <div></div>
+            <div class="mezcla-color-1"></div>
           </div>
         </label>
      </div>
@@ -95,7 +95,7 @@
       </div>
     </section>
   </header>
-  <section id="sobre-mi" class="centrado"> 
+  <section id="sobre-mi" class="centrado mezcla-color-2"> 
      <div>
         <h2 class="text-center">Sobre mi</h2>
         <p>Hola, soy Leonardo y me encanta el aprender a diseñar paginas web. Mi descubrimiento e interes en el desarrollo web comenzo en el 2021 cuando tuve mi primera computadora, al saltar de instalar un OS a curiosear con el hacking, fue ahi donde me entere que el software en general no se construian tecleando unos y ceros, el investigar mas me hizo quedarme enganchado con la programacion.
@@ -107,7 +107,7 @@
         <img src="https://miuvenlagunillas.org/media/blog/img-portafolio.png" >
       </div>
   </section>
-  <section id="habilidades">
+  <section id="habilidades" class="centrado column">
     <h2 class="Observer coqueta">Habilidades</h2>
     <div class="wrap">
         <div class="column Observer">
@@ -138,69 +138,42 @@
         </div>
     </div>
   </section>
-  <section id="projects">
+  <section id="projects" class="mezcla-color-2">
     <h2 class="text-center">Proyectos</h2>
     <div>
-      <a> 
-        <div>
-          <h3 class="project-tile coqueta">Pagina de tributo</h3>
+        <div class="muestra-responsive">
           <div>
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" />
+            <h3 class="project-tile">Miuven Lagunillas</h3>
+            <p>Esta es mi primera pagina web, es un 
+              Openblog hecho con modelos ORM en django, tiene un formulario para recolectar datos de comunidades indigenas, control de registro de usuarios,
+              inicio de seccion, un historial de las modificaciones hechas a la tabla del censo indigena(plugin). para una informacion mas completa visite la pagina
+              dando click en la imagen.
+            </p>
+          </div>
+          <div>
+            <div class="pc">
+              <img src="images/miuven_pc.png" />
+            </div>
+            <div class="tlf">
+              <img src="images/miuven_tlf.png" />
+            </div>
+            <div class="tablet">
+                <img src="images/miuven_tablet.png" />
+            </div>
           </div>
         </div>
-      </a>
-      <a>
-        <div>   
-          <h3 class="project-tile coqueta">cotizaciones al azar</h3>
-          <div>
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png" />
-          </div>
-        </div>
-       </a> 
-       <a>
-        <div>    
-          <h3 class="project-tile coqueta">Calculadora javascript</h3>
-          <div>
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" />
-          </div>
-        </div>
-      </a>
-      <a> 
-        <div>
-          <h3 class="project-tile coqueta">Visor de Wikipedia</h3>
-          <div>
-           <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" />
-          </div>
-        </div>
-      </a>
-      <a>
-        <div>  
-          <h3 class="project-tile coqueta">La viejita</h3>
-          <div>
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" />
-          </div>
-        </div>
-      </a>
-      <a>
-        <div>
-          <h3 class="project-tile coqueta">Datos del mapa</h3>
-          <div>
-            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" />
-          </div>
-        </div>  
-      </a>
     </div>
   </section>
   <section id="contacto">
     <h2 class="text-center coqueta">Contactame</h2>
-    <form action="https://formsubmit.co/accdda728e69e0a4c36748d90b6059f4" method="post">
+    <form class="column" action="https://formsubmit.co/accdda728e69e0a4c36748d90b6059f4" method="post">
       <label for="name">Nombre</label>
       <input type="text" name="name" id="name">
       <label for="email">Email</label>
       <input type="text" name="email" id="email">
       <label for="message">Mensaje</label>
       <textarea name="message" id="message" cols="30" rows="10"></textarea>
-      <button type="submit">enviar</button>
+      <button type="submit" class="mezcla-color-2">enviar</button>
     </form>
   </section>
 </body>
