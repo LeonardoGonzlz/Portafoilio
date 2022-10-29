@@ -97,39 +97,40 @@
   </header>
   <section id="sobre-mi" class="centrado mezcla-color-2"> 
      <div>
-        <h2 class="text-center">Sobre mi</h2>
-        <p>Hola, soy Leonardo y me encanta el aprender a diseñar paginas web. Mi descubrimiento e interes en el desarrollo web comenzo en el 2021 cuando tuve mi primera computadora, al saltar de instalar un OS a curiosear con el hacking, fue ahi donde me entere que el software en general no se construian tecleando unos y ceros, el investigar mas me hizo quedarme enganchado con la programacion.
-        </p>
-        <p>Soy un aficionado por el crecimiento personal, el aprender nuevas habilidades le da sentido a mi vida, me hace sentir que avanzo, actualmente ando en busca de un empleo como programador junior para comenzar mi carrera como programador.
+        <h2 class="text-center observer">Sobre mi</h2>
+        <p class="observer">Hola, soy Leonardo y me encanta el aprender a diseñar paginas web. Mi descubrimiento e interes en el desarrollo web comenzo en el 2021 cuando tuve mi primera computadora, al saltar de instalar un OS a curiosear con el hacking, fue ahi donde me entere que el software en general no se construian tecleando unos y ceros, el investigar mas me hizo quedarme enganchado con la programacion.
+        <br>
+        <br>
+          Soy un aficionado por el crecimiento personal, el aprender nuevas habilidades le da sentido a mi vida, me hace sentir que avanzo, actualmente ando en busca de un empleo como programador junior para comenzar mi carrera como programador.
         </p>
       </div>
-      <div class="img">
+      <div class="img observer">
         <img src="https://miuvenlagunillas.org/media/blog/img-portafolio.png" >
       </div>
   </section>
   <section id="habilidades" class="centrado column">
-    <h2 class="Observer coqueta">Habilidades</h2>
+    <h2 class="observer coqueta">Habilidades</h2>
     <div class="wrap">
-        <div class="column Observer">
+        <div class="column observer">
             <div>
                 <img src="images/logo_html.png" alt="" width="36" height="36">
                 <img src="images/logo_css.png" alt="" width="38" height="39">
             </div>
             <p class="coqueta">HTML/CSS</p>
         </div>
-        <div class="column Observer">
+        <div class="column observer">
             <img src="images/logo_javascript.png" alt="" width="38" height="40">
             <p class="coqueta">Javascript</p>
         </div>
-        <div class="column Observer">
+        <div class="column observer">
             <img src="images/logo_django.png" alt="" width="48" height="48">
             <p class="coqueta">Django</p>
         </div>
-        <div class="column Observer">
+        <div class="column observer">
             <img src="images/logo_python.png" alt="" width="50" height="50">
             <p class="coqueta">Python</p>
         </div>
-        <div class="column Observer">
+        <div class="column observer">
             <div>
                 <img src="images/logo_git.png" alt="" width="40" height="40">
                 <img src="images/logo_github.png" alt="" width="50" height="50">
@@ -140,10 +141,54 @@
   </section>
   <section id="projects" class="mezcla-color-2">
     <h2 class="text-center">Proyectos</h2>
-    <div>
-        <div class="muestra-responsive">
+    <i class="slider-button button-left fa-solid fa-circle-chevron-left"></i>
+    <i class="slider-button button-right fa-solid fa-circle-chevron-right"></i>
+    <div id="slider">
+        <div class="project">
           <div>
             <h3 class="project-tile">Miuven Lagunillas</h3>
+            <p>Esta es mi primera pagina web, es un 
+              Openblog hecho con modelos ORM en django, tiene un formulario para recolectar datos de comunidades indigenas, control de registro de usuarios,
+              inicio de seccion, un historial de las modificaciones hechas a la tabla del censo indigena(plugin). para una informacion mas completa visite la pagina
+              dando click en la imagen.
+            </p>
+          </div>
+          <div>
+            <div class="pc">
+              <img src="images/miuven_pc.png" />
+            </div>
+            <div class="tlf">
+              <img src="images/miuven_tlf.png" />
+            </div>
+            <div class="tablet">
+                <img src="images/miuven_tablet.png" />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <h3 class="project-tile">Tributo a Muhammad Ali</h3>
+            <p>Esta es mi primera pagina web, es un 
+              Openblog hecho con modelos ORM en django, tiene un formulario para recolectar datos de comunidades indigenas, control de registro de usuarios,
+              inicio de seccion, un historial de las modificaciones hechas a la tabla del censo indigena(plugin). para una informacion mas completa visite la pagina
+              dando click en la imagen.
+            </p>
+          </div>
+          <div>
+            <div class="pc">
+              <img src="images/miuven_pc.png" />
+            </div>
+            <div class="tlf">
+              <img src="images/miuven_tlf.png" />
+            </div>
+            <div class="tablet">
+                <img src="images/miuven_tablet.png" />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div>
+            <h3 class="project-tile">Formulario</h3>
             <p>Esta es mi primera pagina web, es un 
               Openblog hecho con modelos ORM en django, tiene un formulario para recolectar datos de comunidades indigenas, control de registro de usuarios,
               inicio de seccion, un historial de las modificaciones hechas a la tabla del censo indigena(plugin). para una informacion mas completa visite la pagina
@@ -176,5 +221,6 @@
       <button type="submit" class="mezcla-color-2">enviar</button>
     </form>
   </section>
+  <script src="javascript/script.js"></script>
 </body>
 </html>

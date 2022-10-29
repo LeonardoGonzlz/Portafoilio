@@ -205,16 +205,17 @@ button{
 /* section projectos*/
 
 #projects{
-  padding-top: 50px;
-  margin-top: 20px;
+  display: grid;
+  align-items: center;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 #projects h2{
   margin-bottom: 50px;
 }
 
-.muestra-responsive, #contacto{
+.project, #contacto{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   align-items: center;
@@ -223,8 +224,32 @@ button{
   column-gap: 30px;
   padding-inline: 5%;
 }
-.muestra-responsive{
+
+#slider{
+  display: flex;
+  width: 300%;
+  margin-left: -100%;
+}
+
+.slider-button{
+  position: absolute;
+  background: var(--color-segundario);
+  font-size: 25px;
+  border-radius: 100%;
+  width: 20px;
+  z-index: 1;
+  cursor: pointer;
+}
+.button-left{
+  left: calc(3% + 40px);
+}
+.button-right{
+  right: 3%;
+}
+
+.project{
   position: relative;
+  margin-top: -20vh;
 }
 
 .tablet,.pc,.tlf{
@@ -251,7 +276,7 @@ button{
 
 .tlf{
   width: 7%;
-  right: 10%;
+  right: 12%;
   border-radius: 3%;
   bottom: 0;
   overflow: hidden;
@@ -283,6 +308,19 @@ button{
   align-items: center;
 }
 
+/* animacion observer */
+
+.observer{
+  opacity:0;
+  transform: translateY(150px) scale(0.5);
+  transition: all 1.7s;
+}
+
+.observer-animacion{
+  opacity: 1;
+  transform: translateY(0px) scale(1);
+}
+
 /* personalizar scroll */
 
 ::-webkit-scrollbar{
@@ -294,7 +332,7 @@ button{
   background: var(--color-accion);
 }
 
-/* reutilizacion de codigo */
+/* en el camino */
 
 h2{
   font-size: max(3vw, 30px);
@@ -351,13 +389,13 @@ h2{
 @media only screen and (max-width: 600px){
   nav > div:first-child{
     position: fixed;
-    width: calc(100% + 2px);
+    width: 100%;
     background: var(--color-segundario);
     height: 40px;
     z-index: 999;
     top: 0;
     left: 0;
-    padding-inline: 5%;
+    padding-inline: 10%;
     border-bottom: solid 2px var(--color-dominante);
   }
   body{
