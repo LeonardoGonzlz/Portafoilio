@@ -1,33 +1,31 @@
 /* silider */
 (()=>{
-    const slider = document.querySelector("#slider");
-let projects = document.querySelectorAll(".project");
+    const $slider = document.querySelector("#slider");
+    const $projects = document.querySelectorAll(".project")
 
 const next = ()=>{
-    let firstProject = document.querySelectorAll(".project")[0];
-    slider.style.marginLeft = "-200%";
-    slider.style.transition = "all 1s"
+    let $firstProject = document.querySelectorAll(".project")[0];
+    $slider.style.marginLeft = "-200%";
+    $slider.style.transition = "all 1s"
 
     setTimeout(()=>{
-        slider.style.transition = "none";
-        slider.insertAdjacentElement("beforeend", firstProject)
+        $slider.style.transition = "none";
+        $slider.insertAdjacentElement("beforeend", $firstProject)
         
-        slider.style.marginLeft = "-100%";
+        $slider.style.marginLeft = "-100%";
     }, 1000)
-
 }
 const prev = ()=>{
-    let lastProject = document.querySelectorAll(".project")[projects.length - 1];
-    slider.style.marginLeft = "0";
-    slider.style.transition = "all 1s"
+    let $lastProject = document.querySelectorAll(".project")[$projects.length - 1];
+    $slider.style.marginLeft = "0";
+    $slider.style.transition = "all 1s"
 
     setTimeout(()=>{
-        slider.style.transition = "none";
-        slider.insertAdjacentElement("afterbegin", lastProject)
+        $slider.style.transition = "none";
+        $slider.insertAdjacentElement("afterbegin", $lastProject)
         
-        slider.style.marginLeft = "-100%";
+        $slider.style.marginLeft = "-100%";
     }, 1000)
-
 }
 
 document.addEventListener("click",(e)=>{
@@ -57,3 +55,7 @@ setInterval(()=>{next()}, 13000)
     $observer.forEach( el => observador.observe(el))
     
 })();
+
+/* efecto wabe */
+
+

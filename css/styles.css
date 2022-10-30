@@ -11,6 +11,10 @@ body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
   margin-left: 40px;
+  text-align: justify;
+  overflow-x: hidden;
+}
+*{
   scroll-behavior: smooth;
 }
 
@@ -101,7 +105,9 @@ nav a div{
   width: 155px;
   height: 35px;
 }
-
+nav a > div{
+  position: relative;
+}
 nav a{
   color: var(--color-dominante);
   font-size: 19px;
@@ -110,6 +116,27 @@ nav a{
 nav p{
   font-weight: 500;
 }
+
+.efecto{
+  position: absolute;
+  overflow: hidden;
+  margin-top: -35px;
+  
+}
+.efecto *{
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  color: var(--color-accion);
+  transition: clip-path .5s linear;
+}
+
+.efecto:hover p{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.efecto:hover i{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
 
 /* Seccion de bienvenida */
 
@@ -127,6 +154,9 @@ nav p{
   width: 50px;
   height: 50px;
   background: var(--color-accion);
+  color: var(--color-dominante);
+  padding-inline: 5px;
+  font-weight: 900;
 }
 
 h1{
@@ -139,20 +169,18 @@ h1{
 /* Sobre mi*/
 
 #sobre-mi{
-  justify-content: space-around;
-  flex-wrap: wrap;
-  min-height: 110vh;
+  min-height: 100vh;
+  padding-block: 60px;
 }
 
 #sobre-mi .img{
-  max-width: 270px;
   position: relative;
+  width: 70%;
+  margin-left: auto;
   overflow: hidden;
   border-radius: 0% 140% 100% 100%;
-  margin-top: 60px;
   position: relative;
   z-index: 1;
-  transform: scale(1.3);
   background: linear-gradient(139deg, transparent 35%, var(--color-dominante) 35%);
 }
 
@@ -162,7 +190,6 @@ h1{
 }
 
 #sobre-mi  div{
-  width: 40%;
   min-width: 300px;
 }
 
@@ -215,14 +242,14 @@ button{
   margin-bottom: 50px;
 }
 
-.project, #contacto{
+.project, #contacto,#sobre-mi{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   align-items: center;
   width: 100%;
   gap: 5px;
   column-gap: 30px;
-  padding-inline: 5%;
+  padding-inline: 3%;
 }
 
 #slider{
@@ -386,12 +413,27 @@ h2{
   font-weight: 600;
 }
 
+@media only screen and (max-width: 915px){
+  .project{
+    display: block;
+  }
+  .img{
+    margin-right: auto;
+  }
+}
+
 @media only screen and (max-width: 600px){
+
+  #welcome-section div a{
+    font-size: 12px;
+    padding-inline: 3px;
+  }
+
   nav > div:first-child{
     position: fixed;
     width: 100%;
     background: var(--color-segundario);
-    height: 40px;
+    height: 60px;
     z-index: 999;
     top: 0;
     left: 0;
