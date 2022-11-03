@@ -154,7 +154,7 @@ nav p{
   width: 50px;
   height: 50px;
   background: var(--color-accion);
-  color: var(--color-dominante);
+  color: var(--color-segundario);
   padding-inline: 5px;
   font-weight: 900;
 }
@@ -235,12 +235,21 @@ button{
   display: grid;
   align-items: center;
   min-height: 100vh;
-  overflow: hidden;
+
+}
+
+#projects > small{
+  text-align: center;
+}
+#projects span > .enlace, #projects > small .enlace{
+  color: var(--color-accion);
+  text-decoration: revert;
 }
 
 #projects h2{
   margin-bottom: 50px;
 }
+
 
 .project, #contacto,#sobre-mi{
   display: grid;
@@ -254,7 +263,7 @@ button{
 
 #slider{
   display: flex;
-  width: 300%;
+  width: 400%;
   margin-left: -100%;
 }
 
@@ -276,7 +285,7 @@ button{
 
 .project{
   position: relative;
-  margin-top: -20vh;
+  margin-top: -10vh;
 }
 
 .tablet,.pc,.tlf{
@@ -314,6 +323,8 @@ button{
 .tlf img{
   margin-bottom: -5px;
 }
+
+
 
 /*  habilidades */
 
@@ -415,7 +426,7 @@ h2{
 
 @media only screen and (max-width: 915px){
   .project{
-    display: block;
+    display: inline;
   }
   .img{
     margin-right: auto;

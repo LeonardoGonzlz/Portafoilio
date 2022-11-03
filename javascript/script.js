@@ -34,7 +34,7 @@ document.addEventListener("click",(e)=>{
     if(/button-right/.test(e)) next();
 })
 
-setInterval(()=>{next()}, 13000)
+setInterval(()=>{next()}, 15000)
 
 })();
 
