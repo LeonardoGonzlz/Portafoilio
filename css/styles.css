@@ -232,8 +232,8 @@ button{
 /* section projectos*/
 
 #projects{
-  display: grid;
-  align-items: center;
+
+  justify-content: space-around;
   min-height: 100vh;
 
 }
@@ -259,6 +259,9 @@ button{
   gap: 5px;
   column-gap: 30px;
   padding-inline: 3%;
+}
+#projects .project{
+  padding-inline: 1%;
 }
 
 #slider{
@@ -413,7 +416,7 @@ h2{
   color: var(--color-dominante);
 }
 
-.column{
+.column, #projects{
   display: flex;
   flex-direction: column;
 }
@@ -425,9 +428,6 @@ h2{
 }
 
 @media only screen and (max-width: 915px){
-  .project{
-    display: inline;
-  }
   .img{
     margin-right: auto;
   }
