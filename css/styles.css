@@ -232,7 +232,7 @@ button{
 /* section projectos*/
 
 #projects{
-
+  overflow: hidden;
   justify-content: space-around;
   min-height: 100vh;
 
